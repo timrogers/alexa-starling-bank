@@ -1,0 +1,59 @@
+{
+  "_links": {
+    "nextPage": {
+      "href": "NOT_YET_IMPLEMENTED"
+    }
+  },
+  "_embedded": {
+    "transactions": [
+      {
+        "_links": {
+          "detail": {
+            "href": "api/v1/transactions/direct-debit/3d6d7b99-13f9-4e80-9c10-390952a7234e",
+            "templated": false
+          }
+        },
+        "id": "3d6d7b99-13f9-4e80-9c10-390952a7234e",
+        "currency": "GBP",
+        "amount": -0.99,
+        "direction": "OUTBOUND",
+        "created": "2017-06-13T23:30:00.000Z",
+        "narrative": "Rendall and Rittner",
+        "source": "DIRECT_DEBIT",
+        "balance": 17779.23
+      },
+      {
+        "_links": {
+          "detail": {
+            "href": "api/v1/transactions/direct-debit/3d6d7b99-13f9-4e80-9c10-390952a7234e",
+            "templated": false
+          }
+        },
+        "id": "3d6d7b99-13f9-4e80-9c10-390952a7234e",
+        "currency": "GBP",
+        "amount": -5.00,
+        "direction": "OUTBOUND",
+        "created": "2017-06-13T23:30:00.000Z",
+        "narrative": "H3G",
+        "source": "DIRECT_DEBIT",
+        "balance": 17779.23
+      },
+      {
+        "_links": {
+          "detail": {
+            "href": "api/v1/transactions/direct-debit/3d6d7b99-13f9-4e80-9c10-390952a7234e",
+            "templated": false
+          }
+        },
+        "id": "3d6d7b99-13f9-4e80-9c10-390952a7234e",
+        "currency": "GBP",
+        "amount": 10,
+        "direction": "INBOUND",
+        "created": "2017-06-13T23:30:00.000Z",
+        "narrative": "DINNER",
+        "source": "FASTER_PAYMENTS",
+        "balance": 17779.23
+      }
+    ]
+  }
+}

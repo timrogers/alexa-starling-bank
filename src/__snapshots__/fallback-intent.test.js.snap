@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`handle returns a valid Alexa response 1`] = `
+Array [
+  null,
+  Object {
+    "response": Object {
+      "outputSpeech": Object {
+        "text": "Something went wrong. Check your Starling access token, re-deploy, and then try again",
+        "type": "PlainText",
+      },
+      "shouldEndSession": true,
+    },
+    "version": "1.0",
+  },
+]
+`;

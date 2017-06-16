@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "lodash": "^4.17.4",
+    "moment-timezone": "^0.5.13",
+    "starling-developer-sdk": "^0.1.5"
+  },
+  "devDependencies": {
+    "eslint": "^4.0.0",
+    "eslint-config-airbnb-base": "^11.2.0",
+    "eslint-plugin-import": "^2.3.0",
+    "eslint-plugin-jest": "^20.0.3",
+    "jest": "^20.0.4",
+    "mockdate": "^2.0.1"
+  }
+}

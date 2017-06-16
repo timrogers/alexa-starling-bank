@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`handle failing to get transactions from Starling returns a valid Alexa response 1`] = `
+Object {
+  "response": Object {
+    "outputSpeech": Object {
+      "text": "Something went wrong. Check your Starling access token, re-deploy, and then try again",
+      "type": "PlainText",
+    },
+    "shouldEndSession": true,
+  },
+  "version": "1.0",
+}
+`;
+
+exports[`handle getting transactions from Starling successfully returns a valid Alexa response, adding together the debit transactions 1`] = `
+Object {
+  "response": Object {
+    "outputSpeech": Object {
+      "text": "You spent £5.99 yesterday.",
+      "type": "PlainText",
+    },
+    "shouldEndSession": true,
+  },
+  "version": "1.0",
+}
+`;
