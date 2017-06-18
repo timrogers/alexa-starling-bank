@@ -1,8 +1,8 @@
 const moment = require('moment-timezone');
 
-const TransactionsTotalIntent = require('./transactions-total-intent');
+const TransactionsTotalIntentHandler = require('./transactions-total-intent-handler');
 
-class TodayIntent extends TransactionsTotalIntent {
+class TodayIntentHandler extends TransactionsTotalIntentHandler {
   static getFromDate() {
     return moment.tz('Europe/London').subtract(1, 'day').format('YYYY-MM-DD');
   }
@@ -20,4 +20,4 @@ class TodayIntent extends TransactionsTotalIntent {
   }
 }
 
-module.exports = TodayIntent;
+module.exports = TodayIntentHandler;

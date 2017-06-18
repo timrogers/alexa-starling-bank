@@ -1,7 +1,7 @@
 const _ = require('lodash');
 const Utils = require('./utils');
 
-class TransactionsTotalIntent {
+class TransactionsTotalIntentHandler {
   constructor(client) {
     this.client = client;
   }
@@ -32,20 +32,20 @@ class TransactionsTotalIntent {
   }
 
   static getFromDate() {
-    throw new Error('getFromDate() must be implemented by a subclass of TransactionsTotalIntent');
+    throw new Error('getFromDate() must be implemented by a subclass of TransactionsTotalIntentHandler');
   }
 
   static getToDate() {
-    throw new Error('getFromDate() must be implemented by a subclass of TransactionsTotalIntent');
+    throw new Error('getFromDate() must be implemented by a subclass of TransactionsTotalIntentHandler');
   }
 
   static generateMessageWithAmount() {
-    throw new Error('generateMessageWithAmount() must be implemented by a subclass of TransactionsTotalIntent');
+    throw new Error('generateMessageWithAmount() must be implemented by a subclass of TransactionsTotalIntentHandler');
   }
 
   static generateMessageWithNoTransactions() {
-    throw new Error('generateMessageWithNoTransactions() must be implemented by a subclass of TransactionsTotalIntent');
+    throw new Error('generateMessageWithNoTransactions() must be implemented by a subclass of TransactionsTotalIntentHandler');
   }
 }
 
-module.exports = TransactionsTotalIntent;
+module.exports = TransactionsTotalIntentHandler;

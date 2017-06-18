@@ -1,6 +1,6 @@
 const MockDate = require('mockdate');
 
-const TodayIntent = require('./today-intent');
+const TodayIntentHandler = require('./today-intent-handler');
 const transactionsResponse = require('./transactions.fixture.json');
 
 describe('handle', () => {
@@ -18,7 +18,7 @@ describe('handle', () => {
         getTransactions: jest.fn(() => Promise.resolve({ data: transactionsResponse })),
       };
 
-      const handler = new TodayIntent(client);
+      const handler = new TodayIntentHandler(client);
 
       const mockCallback = jest.fn().mockImplementation((_, response) => {
         expect(client.getTransactions).toHaveBeenCalledWith(undefined, '2017-06-09', '2017-06-10');
@@ -35,7 +35,7 @@ describe('handle', () => {
         getTransactions: jest.fn(() => Promise.reject()),
       };
 
-      const handler = new TodayIntent(client);
+      const handler = new TodayIntentHandler(client);
       const mockCallback = jest.fn().mockImplementation((_, response) => {
         expect(client.getTransactions).toHaveBeenCalledWith(undefined, '2017-06-09', '2017-06-10');
         expect(response).toMatchSnapshot();

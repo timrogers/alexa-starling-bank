@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`handle with no STARLING_ACCESS_TOKEN set returns a valid Alexa response telling you to set the token 1`] = `
+Object {
+  "response": Object {
+    "outputSpeech": Object {
+      "text": "You haven't set a Starling access token. Set the environment variable as described in the readme, re-deploy, and then try again.",
+      "type": "PlainText",
+    },
+    "shouldEndSession": true,
+  },
+  "version": "1.0",
+}
+`;

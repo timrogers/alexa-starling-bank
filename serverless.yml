@@ -10,6 +10,6 @@ provider:
 
 functions:
   handler:
-    handler: handler.handler
+    handler: handler.handle
     events:
       - alexaSkill

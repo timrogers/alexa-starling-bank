@@ -1,0 +1,41 @@
+{
+  "intents": [
+    {
+      "name": "AMAZON.CancelIntent",
+      "samples": []
+    },
+    {
+      "name": "AMAZON.HelpIntent",
+      "samples": []
+    },
+    {
+      "name": "AMAZON.StopIntent",
+      "samples": []
+    },
+    {
+      "name": "balance",
+      "samples": [
+        "Tell me my balance",
+        "What is my balance",
+        "How much do I have in my account"
+      ],
+      "slots": []
+    },
+    {
+      "name": "today",
+      "samples": [
+        "how much have I spent today",
+        "how much did I spend today"
+      ],
+      "slots": []
+    },
+    {
+      "name": "yesterday",
+      "samples": [
+        "how much did I spend yesterday",
+        "what did I spend yesterday"
+      ],
+      "slots": []
+    }
+  ]
+}

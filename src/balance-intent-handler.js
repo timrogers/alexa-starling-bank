@@ -1,6 +1,6 @@
 const Utils = require('./utils');
 
-class BalanceIntent {
+class BalanceIntentHandler {
   constructor(client) {
     this.client = client;
   }
@@ -18,4 +18,4 @@ class BalanceIntent {
   }
 }
 
-module.exports = BalanceIntent;
+module.exports = BalanceIntentHandler;
