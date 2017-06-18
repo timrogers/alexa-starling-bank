@@ -1,14 +1,19 @@
 # Starling Bank for Alexa
 
-This Alexa skill, built with [Serverless](https://serverless.com) and easily deployable to AWS Lambda, lets you access key details about your 
-[Starling Bank](https://www.starlingbank.com) bank account using your voice.
+[![CircleCI](https://circleci.com/gh/timrogers/alexa-starling-bank.svg?style=svg)](https://circleci.com/gh/timrogers/alexa-starling-bank)
+
+This Alexa skill, built with [Serverless](https://serverless.com) and easily deployable
+to AWS Lambda, lets you access key details about your
+[Starling Bank](https://www.starlingbank.com) bank account using your voice, from your
+Amazon Echo, Echo Dot or other Alexa device.
 
 ## Setup
 
 1. Install [Serverless](https://serverless.com) with `yarn global add serverless`.
 2. Grab the skill's development and runtime dependencies by running `yarn`.
 3. Set your Starling Bank personal access token as an environment variable,
-`STARLING_ACCESS_TOKEN`. (This will be used on Lambda to authenticate with Starling.)
+`STARLING_ACCESS_TOKEN`. (This will be used on Lambda to authenticate with Starling
+and access your account.)
 4. Run `serverless deploy` to deploy the code to AWS Lambda. You'll be asked for your
 AWS credentials the first time round.
 5. Head to the [Lambda console](https://eu-west-1.console.aws.amazon.com/lambda/home),
@@ -26,7 +31,15 @@ then click "Next".
 8. On the Configuration page, choose the Service Endpoint Type "Amazon Lambda ARN",
 then choose your region, and then paste in the ARN you grabbed earlier, then click
 "Save".
-9. On the "Test" page, flick the switch to Enabled. You can now test the skill.
+9. On the Test page, flick the switch to Enabled. You can now test the skill - head
+to the Usage section below.
+10. If you make changes to the code, run the tests with `yarn test`, then re-deploy
+with `serverless deploy`. Your skill will be updated in place, and you'll be able to test
+your changes immediately from Alexa. Some changes will require you to change the Intent
+Schema on the Alexa developer portal - if you make changes there, don't forget to
+recommit them in
+[intent-schema.json](https://github.com/timrogers/alexa-starling-bank/blob/master/intent-schema.json)
+if you're sharing your changes with the community.
 
 ## Usage
 
