@@ -5,7 +5,7 @@
   },
   "dependencies": {
     "lodash": "^4.17.4",
-    "moment-timezone": "^0.5.13",
+    "moment-timezone": "^0.5.35",
     "starling-developer-sdk": "^0.1.5"
   },
   "devDependencies": {
